@@ -2,7 +2,7 @@
   "name": "loginapi",
   "version": "1.0.0",
   "description": "",
-  "main": "functions/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc && netlify-lambda build dist",
     "start": "netlify-lambda serve dist"
