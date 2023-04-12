@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && netlify-lambda build dist",
-    "start": "node dist/index.js"
+    "start": "netlify-lambda serve dist"
   },
   "repository": {
     "type": "git",
