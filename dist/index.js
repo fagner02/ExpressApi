@@ -4,10 +4,10 @@ var serverless = require("serverless-http");
 var express = require("express");
 var cors = require("cors");
 var app = express();
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: false }));
 app.get("/", function (req, res) {
     console.log("Hello World");
     res.send("Hello World");
 });
-module.exports.handler = serverless(app);
+module.exports.handler = serverless(app, {});
 //# sourceMappingURL=../src/src/index.js.map
