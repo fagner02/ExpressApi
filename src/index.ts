@@ -10,7 +10,7 @@ app.use(cors({ origin: "*" }));
 const router = express.Router();
 app.get("/", (req, res) => {
   console.log("Hello World");
-  res.send("Hello World");
+  res.status(200).send("Hello World");
 });
 
 app.use("/.netlify/functions/index", router);
@@ -19,7 +19,5 @@ app.use("/.netlify/functions/index", router);
 // app.listen(3000, () => {
 //   console.log("Server is running on port 3000");
 // });
-
-module.exports = app;
 module.exports.handler = serverless(app, {});
 // export default app;
