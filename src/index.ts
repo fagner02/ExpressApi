@@ -5,7 +5,7 @@ import express = require("express");
 import cors = require("cors");
 const app = express();
 
-app.use(cors({ origin: false }));
+app.use(cors({ origin: "*" }));
 
 const router = express.Router();
 app.get("/", (req, res) => {
