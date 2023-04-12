@@ -8,7 +8,7 @@ const app = express();
 app.use(cors({ origin: "*" }));
 
 const router = express.Router();
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   console.log("Hello World");
   res.status(200).send("Hello World");
 });
