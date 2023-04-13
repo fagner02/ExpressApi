@@ -3,3 +3,6 @@ node_modules
 */*.js
 functions
 output
+
+# Local Netlify folder
+.netlify

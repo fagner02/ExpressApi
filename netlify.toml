@@ -1,4 +1,4 @@
 [build]
-    command = "npm install && npm run build"
+    command = "echo \"$TEST_VAR\" && npm install && npm run build"
     functions = "functions"
     publish = "dist/"
